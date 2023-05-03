@@ -12,8 +12,6 @@ export function Banner() {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque non laborum odit, ut molestiae eos veniam magni quis atque voluptatibus eius commodi velit fugiat impedit consectetur sequi porro ducimus. Nostrum.</p>
                 <div className="content-img d-flex justify-content-center align-items-center">
                   <img src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682739028/BOLDSTRATEGY/Static/Group_168_xdt2xi.png" />
-
-
                 </div>
               </div>
 
