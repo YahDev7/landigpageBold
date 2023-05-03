@@ -81,7 +81,7 @@ export function Packages() {
             </div>
             <div className="row pak">
                 {packages.map((pkg) => (
-                    <div className="col-md-4 p-0" key={pkg.id}>
+                    <div className="col-md-4 col-sm-12 p-0" key={pkg.id}>
                       <div className={"card mb-3 shadow-sm " + (pkg.recomendada ? "recomendada " : "") + (pkg.position === 'first' ? "first" : "") + (pkg.position === 'three' ? "three" : "")+(pkg.position === 'second' ? "second" : "")}>
                         {/* <div className={ pkg.recomendada?"card mb-3 shadow-sm recomendada" :"" && pkg.position==='first'?"first card mb-3 shadow-sm":''&& pkg.position==='three'?"three card mb-3 shadow-sm":''   } > */}
                         <h3 className='gama pt-4' style={{textAlign:'center'}}>{pkg.title}</h3>
@@ -100,10 +100,12 @@ export function Packages() {
                                     {/* <li>{pkg.description}</li> */}
 
                                 </ul>
+                                <div className='text-center'>
+                                  <button type="button" className=" btn btn-lg btn-comprar ">
+                                      Seleccionar
+                                  </button>
 
-                                <button type="button" className=" btn btn-lg btn-comprar ">
-                                    Seleccionar
-                                </button>
+                                </div>
                             </div>
                         </div>
                     </div>

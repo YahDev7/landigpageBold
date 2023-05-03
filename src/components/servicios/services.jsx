@@ -13,7 +13,7 @@ export function Services() {
       </div>
       <div className="services__grid pt-5 ">
         <div className="row ">
-            <div className="services__item col-4 mb-5">
+            <div className="services__item col-lg-4 col-sm-12 col-md-6 mb-5">
               <img src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682824336/BOLDSTRATEGY/Static/promocion_mi4xvf.png" alt="Icon 1" />
              {/*  <h3>Servicio 1</h3> */}
               <p>
@@ -21,7 +21,7 @@ export function Services() {
                 adipiscing elit.
               </p>
             </div>
-            <div className="services__item col-4 mb-5">
+            <div className="services__item col-lg-4 col-sm-12 col-md-6 mb-5">
               <img  alt="Icon 2" src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682824336/BOLDSTRATEGY/Static/development_ylgy3x.png" />
               {/* <h3>Servicio 2</h3> */}
               <p>
@@ -29,7 +29,7 @@ export function Services() {
                 adipiscing elit.
               </p>
             </div>
-            <div className="services__item col-4 mb-5">
+            <div className="services__item col-lg-4 col-sm-12 col-md-6 mb-5">
               <img  alt="Icon 3"  src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682824336/BOLDSTRATEGY/Static/diseno-grafico_aiqpfe.png"/>
             {/*   <h3>Servicio 3</h3> */}
               <p>
@@ -38,9 +38,9 @@ export function Services() {
               </p>
             </div> 
 
-        </div>
-        <div className="row  ">
-          <div className="services__item col-4 ">
+        
+       
+          <div className="services__item col-lg-4 col-sm-12 col-md-6">
               <img  alt="Icon 2"  src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682824336/BOLDSTRATEGY/Static/edicion-de-video_zv7ej3.png"/>
               {/* <h3>Servicio 2</h3> */}
               <p>
@@ -48,7 +48,7 @@ export function Services() {
                 adipiscing elit.
               </p>
             </div>
-            <div className="services__item col-4 ">
+            <div className="services__item col-lg-4 col-sm-12 col-md-6">
               <img  alt="Icon 3" src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682824336/BOLDSTRATEGY/Static/bombilla_bie0yc.png" />
              {/*  <h3>Servicio 3</h3> */}
               <p>
@@ -56,7 +56,7 @@ export function Services() {
                 adipiscing elit.
               </p>
             </div>
-          </div>
+            </div>
         
       </div>
     </section>

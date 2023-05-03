@@ -4,98 +4,197 @@ export function Header() {
   return (
     <>
 
-      <header id="Header" 
-      /* style={{ height: "150px", transition: "300ms all" ,position: "relative"}} */>
-
-        {/*  <div id="HMain" style={{height:"595px"}}>
-          <div className="" style={{width: "100%", textAlign:"center",padding:"10px"}}>
-              <a className="p-0" href="#/bold"><img src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682735524/BOLDSTRATEGY/Static/B_rdfdaw.png" width="30px" className="" alt="" /> </a>
-              <ul className="header-nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Features</a></li>
-                <li><a href="">Price</a></li>
-              </ul>
-
-              <button className="btn btn-buy">Compra ya</button>
-          </div>
-
-      </div> */}
+      <header id="Header">
 
 
+      <nav className="scrolled navbar navbar-expand-lg">
+          <div className="centrar-header">
+            <div className="row w-100 justify-content-between  ">
+              <div className="col-sm-12 col-xl-2 row m-auto">
+
+              <div className="col-10">
+
+                <a className=""  href="#/bold"><img src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682735524/BOLDSTRATEGY/Static/B_rdfdaw.png" width="30px" className="" alt="" /></a>
+              </div>
 
 
-<div style={{position:'relative'}}>
+            <div className="col">
 
-  <div className="cont p-4" >
-              <div className="row justify-content-between align-items-center centrar-header">
+                <button className="navbar-toggler p-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span className="navbar-toggler-icon"></span>
+                </button>
+            </div>
 
-                <div className="col-md-2 text-center">
-                  <a className="p-0" href="#/bold"><img src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682735524/BOLDSTRATEGY/Static/B_rdfdaw.png" width="30px" className="" alt="" /></a>
-                </div>           
-                          
-                <div className="col-md-6 text-start">
-                  <ul className="nav">
-                    <li className="nav-item">
-                      <a className="nav-link" href="#">Home</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#">Services</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#">Features</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#">Price</a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="col-md-4 text-end">
-                  <button className="btn btn-buy">Compra ya</button>
+
+              </div>
+              <div className="col-sm-2 col-md-10 row">
+                <div className="collapse navbar-collapse  " id="navbarSupportedContent">
+                  <div className="col-lg col-md-8">
+                    <ul className="navbar-nav mb-2 mb-lg-0 all">
+
+                      <li className="nav-item">
+                        <a className="nav-link active" href="#">Home</a>
+
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Services</a>
+
+                      </li>
+                      <li className="nav-item dropdown">
+                        <a className="nav-link" href="#">Features</a>
+
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Price</a>
+
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+
+                  <div className=" col-12 col-md-4  col-lg-3">
+                    <div className=" text-center">
+                      <a className="btn btn-contacto" href="#contacto"> Contactame</a>
+                    </div>
+                  </div>
                 </div>
               </div>
-    </div> 
 
-    <div style={{/* height:"706px", */height:"100%",position:'relative'}}>
 
-      <img src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682739719/BOLDSTRATEGY/Static/image_67_h8dk5h.png" style={{opacity:'0.1', width:'100%', objectFit:'cover'  }} /> 
-    </div>  
+            </div>
+          </div>
+        </nav>
 
-  <div class="d-flex align-items-center">
 
-      <div className="content-banner  col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1 aos-init aos-animate">
 
-            <h2 style={{fontSize:'50px !important' }}>Desarrollo y crecimiento de tu negocio</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque non laborum odit, ut molestiae eos veniam magni quis atque voluptatibus eius commodi velit fugiat impedit consectetur sequi porro ducimus. Nostrum.</p>
-            <img src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682739028/BOLDSTRATEGY/Static/Group_168_xdt2xi.png"  /> 
-        
+    {/*     <nav className="scrolled navbar navbar-expand-lg">
+          <div className="centrar-header">
+            <div className="row justify-content-between  ">
+              <div className="col-md-2 col-12 row p-0 text-center">
+
+                <a className="p-0 col-10" href="#/bold"><img src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682735524/BOLDSTRATEGY/Static/B_rdfdaw.png" width="30px" className="" alt="" /></a>
+
+
+
+                <button className="navbar-toggler p-0 col-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span className="navbar-toggler-icon"></span>
+                </button>
+
+
+              </div>
+              <div className="col-12 col-md-10 p-0 row">
+                <div className="collapse navbar-collapse p-0 " id="navbarSupportedContent">
+                  <div className="col-lg col-md-8">
+                    <ul className="navbar-nav  mb-2 mb-lg-0">
+
+                      <li className="nav-item">
+                        <a className="nav-link active" href="#">Home</a>
+
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Services</a>
+
+                      </li>
+                      <li className="nav-item dropdown">
+                        <a className="nav-link" href="#">Features</a>
+
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">Price</a>
+
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+
+                  <div className=" col-12 col-md-4  col-lg-3">
+                    <div className=" text-center">
+                      <a className="btn btn-contacto" href="#contacto"> Contactame</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </nav> */}
+
+
+        {/* <nav className="cont p-4 navbar navbar-expand-lg  navbar-light" >
+  <div className="row justify-content-between align-items-center  centrar-header">
+    <div className="col-md-2 text-center">
+      <a className="p-0" href="#/bold"><img src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682735524/BOLDSTRATEGY/Static/B_rdfdaw.png" width="30px" className="" alt="" /></a>
+      
+      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div className="collapse navbar-collapse col-md-6 " id="navbarScroll">
+      <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" >
+        <li className="nav-item">
+          <a className="nav-link active" href="#">Home</a>
+
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Services</a>
+
+        </li>
+        <li className="nav-item dropdown">
+          <a className="nav-link" href="#">Features</a>
+
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Price</a>
+
+        </li>
+      </ul>
+
+    </div>
+    <div className="col-md-4 text-end">
+        <button className="btn btn-buy">Compra ya</button>
       </div>
   </div>
-</div>
+</nav> */}
 
 
-   
+        {/*   <div style={{ position: 'relative' }}>
 
-        {/* 
-      <div className="offcanvas offcanvas-start" data-bs-scroll="true"  id="menuLateral" aria-labelledby="offcanvasNavbarLabel">         
+  <div className="cont p-4" >
+    <div className="row justify-content-between align-items-center centrar-header">
 
-              <div className="offcanvas-header menuLateralHeader" >
-              <h5 className="offcanvas-title menuLateraltitle pt-3 pb-3 text-center" style={{fontSize: "20px !important", textDecoration:"none"}}><a  style={{textDecoration:"none"}} href="#/categorias"  >Categorias</a></h5>
-              <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-          
-              <div className="menuLateralBody offcanvas-body">
-                  <ul className="navbar-nav accordion accordion-flush menuLateralUl " id="MenuLateralAccordionDnone">
-          
-                     
+      <div className="col-md-2 text-center">
+        <a className="p-0" href="#/bold"><img src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682735524/BOLDSTRATEGY/Static/B_rdfdaw.png" width="30px" className="" alt="" /></a>
+      </div>
 
-                  </ul>
-              </div>
-              
+      <div className="col-md-6 text-start">
+        <ul className="nav">
+          <li className="nav-item">
+            <a className="nav-link" href="#">Home</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">Services</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">Features</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">Price</a>
+          </li>
+        </ul>
+      </div>
+      <div className="col-md-4 text-end">
+        <button className="btn btn-buy">Compra ya</button>
+      </div>
+    </div>
+  </div>
 
-      </div> */}
-
-
+</div> */}
 
       </header>
     </>
