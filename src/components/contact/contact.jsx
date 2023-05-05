@@ -13,9 +13,29 @@ export function Contact() {
     setFormState({ ...formState, [name]: value });
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit =async (event) => {
     event.preventDefault();
-    console.log(formState);
+/* 
+    const options={
+      method:"POST",
+      body:JSON.stringify({formState}),
+      headers:{"Content-Type":"application/json"}
+    }; */
+    const serviceID="service_yi99f8n"
+    const templateID="template_2beb3qo"
+    let res=await emailjs.send(serviceID,templateID,formState)
+    //let res =await fetch(`https://formsubmit.co/ajax/966f5dac451b0364462d60a6fa2b3ad2`,options)
+
+    console.log(res);
+
+    /* const options={
+      method:"POST",
+      body:JSON.stringify({formState}),
+      headers:{"Content-Type":"application/json"}
+    };
+    let res =await fetch(`https://formsubmit.co/ajax/966f5dac451b0364462d60a6fa2b3ad2`,options)
+
+    console.log(formState); */
     // Aquí puedes agregar la lógica para enviar el formulario
   };
 
