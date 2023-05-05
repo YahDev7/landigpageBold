@@ -403,7 +403,7 @@ footer{
 }
 
 
-#loaderweb,#videoweb {
+#loaderweb {
   top: 0;
   bottom: 0;
   left: 0;
@@ -415,21 +415,42 @@ footer{
 
 }
 
-.loadercontent,.videocontent{
+.loadercontent{
   position: relative;
   top: 50% !important;
   left: 50% !important;
+}
+
+
+#videoweb {
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, .2);
+
+}
+
+#videoweb .centervideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .btn-video{
   cursor: pointer;
   text-align: center;
   border-radius: 10px;
-  width: 25px;
+  width: 40px;
+  font-weight: bold;
+padding: 10px;
   background: white;
   position: absolute;
-  top: 96px;
-  right: 290px; 
+  right: 0; 
 }
 
 
