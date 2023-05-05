@@ -1,52 +1,52 @@
 import { useState } from "react";
-
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+import { Loader } from "../../modal";
+const MySwal = withReactContent(Swal)
+const data = {
+  name: "",
+  email: "",
+  subject: "",
+  message: "",
+}
 export function Contact() {
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
+  const [formState, setFormState] = useState(data);
+  const [loader, setLoader] = useState(false);
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormState({ ...formState, [name]: value });
   };
 
-  const handleSubmit =async (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-/* 
-    const options={
-      method:"POST",
-      body:JSON.stringify({formState}),
-      headers:{"Content-Type":"application/json"}
-    }; */
+    setLoader(true)
+
     const serviceID="service_yi99f8n"
     const templateID="template_2beb3qo"
     let res=await emailjs.send(serviceID,templateID,formState)
-    //let res =await fetch(`https://formsubmit.co/ajax/966f5dac451b0364462d60a6fa2b3ad2`,options)
+     
+    if(res.status===200) return MySwal.fire({
+      title: <h2>Se envio con éxito!</h2>,
+      icon: 'success'
+    })
+    setFormState(data)
+    setLoader(false)
 
-    console.log(res);
 
-    /* const options={
-      method:"POST",
-      body:JSON.stringify({formState}),
-      headers:{"Content-Type":"application/json"}
-    };
-    let res =await fetch(`https://formsubmit.co/ajax/966f5dac451b0364462d60a6fa2b3ad2`,options)
+    return alert("Ocurrio un error al anviar el correo");
 
-    console.log(formState); */
-    // Aquí puedes agregar la lógica para enviar el formulario
   };
 
   return (
-    <section id="contact" className="contact pb-5">
 
-<div className="mb-5">
-<h2>Contacto</h2>
-                <div className="underline-title mb-5"></div>
-          </div>
-        
+    <section id="contact" className="contact pb-5">
+      {loader&& <Loader></Loader>}
+
+      <div className="mb-5">
+        <h2>Contacto</h2>
+        <div className="underline-title mb-5"></div>
+      </div>
+
       <div className="container" data-aos="fade-up">
         <div className="row mt-5">
 
