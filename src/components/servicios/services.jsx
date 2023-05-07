@@ -2,7 +2,7 @@ import React from "react";
 
 export function Services() {
   return (
-    <section className="services ">
+    <section className="services" id='Services'>
       <div className="mb-5">
       <h2>Nuestros servicios</h2>
                 <div className="underline-title mb-5"></div>
@@ -17,24 +17,24 @@ export function Services() {
               <img src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682824336/BOLDSTRATEGY/Static/promocion_mi4xvf.png" alt="Icon 1" />
              {/*  <h3>Servicio 1</h3> */}
               <p>
-                Descripción del servicio 1. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit.
+              Diseño y gestión de campañas publicitarias en redes sociales específicas para productos o servicios de educación o cursos en línea
+
               </p>
             </div>
             <div className="services__item col-lg-4 col-sm-12 col-md-6 mb-5">
               <img  alt="Icon 2" src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682824336/BOLDSTRATEGY/Static/development_ylgy3x.png" />
               {/* <h3>Servicio 2</h3> */}
               <p>
-                Descripción del servicio 2. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit.
+              Plataformas de aprendizaje en línea, con sistemas de gestión de cursos y herramientas interactivas para el aprendizaje en línea., incluyendo pasarela de pago
+
               </p>
             </div>
             <div className="services__item col-lg-4 col-sm-12 col-md-6 mb-5">
               <img  alt="Icon 3"  src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682824336/BOLDSTRATEGY/Static/diseno-grafico_aiqpfe.png"/>
             {/*   <h3>Servicio 3</h3> */}
               <p>
-                Descripción del servicio 3. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit.
+              Creación y diseño de imágenes publicitarias para redes sociales y publicidad online.
+
               </p>
             </div> 
 
@@ -44,16 +44,16 @@ export function Services() {
               <img  alt="Icon 2"  src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682824336/BOLDSTRATEGY/Static/edicion-de-video_zv7ej3.png"/>
               {/* <h3>Servicio 2</h3> */}
               <p>
-                Descripción del servicio 2. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit.
+              Edición de videos promocionales para redes sociales y publicidad online.
+
               </p>
             </div>
             <div className="services__item col-lg-4 col-sm-12 col-md-6">
               <img  alt="Icon 3" src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682824336/BOLDSTRATEGY/Static/bombilla_bie0yc.png" />
              {/*  <h3>Servicio 3</h3> */}
               <p>
-                Descripción del servicio 3. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit.
+              Analítica web para medir y evaluar el tráfico y el comportamiento de los usuarios en el sitio web.
+Creación y gestión de perfiles en redes sociales para aumentar la presencia en línea y la interacción con los clientes
               </p>
             </div>
             </div>

@@ -4,30 +4,38 @@ const packages = [
         id: 1,
         title:'ECONOMICA',
         name: 'Paquete Básico',
-        price: 100,
+        price: 590,
         description: [
-          'Incluye funcionalidades básicas', 
-          ' lorem lorem lorem loremlorem',
-          ' lorem lorem lorem loremlorem',
-          'asdasdsadasd',
-          'asdasdsadasd',
-          'asdasdsadasd',
-          'asdasdsadasd'],
+          ' Administración de 2 pautas publicitarias en Facebook e Instagram', 
+          ' Elaboración de Copywriting. ',
+          ' Estrategias de Contenido',
+          ' Manejo de 2 Redes / IG y FB',
+          ' Página Informativa. ',
+          ' 10 Publicaciones Mensuales. ',
+          ' 1 Reunión mensual. ', 'De Regalo: En el primer mes obtienes GRATIS un video profesional para reel. ',
+          ' 1 Video formato Reel. '],
+         
         position:'first'
     },
     {
         id: 3,
         title:'PREMIUN',
         name: 'Paquete Avanzado',
-        price: 300,
+        price: 1150 ,
         description: [
-          'Incluye funcionalidades avanzadas',
-          'asdasdsadasd',
-          'asdasdsadasd',
-          ' lorem lorem lorem loremlorem',
-          ' lorem lorem lorem loremlorem',
-          'asdasdsadasd',
-          'asdasdsadasd'
+          ' Administración de 6 pautas publicitarias en Facebook, Instagram y Tik Tok.',
+          ' Elaboración de Copywriting. ',
+          ' Estrategias de Contenido. ',
+          ' Grilla de Contenido. ',
+          '  Investigación de Mercado.',
+          ' Manejo de 3 Redes / IG, FB y TIK TOK',
+          ' Landing Page o creación de Tienda Virtual para venta de productos. ',
+          ' 30 Publicaciones Mensuales. ',
+          ' 20 Stories (Formato 1080px x 1920px).',
+          ' 2 Reuniones mensuales. ',
+          ' Informe detallado mensualmente.',
+          ' DRegalo: En el primer mes obtienes GRATIS seis videos profesionales para reels. ',
+          ' 6 Videos formato Reel. '
         ],
        
         position:'three'
@@ -37,16 +45,20 @@ const packages = [
        
         title:'AVANZADO',
         name: 'Paquete Intermedio',
-        price: 200,
+        price: 890 ,
         description: [
-          'Incluye todas las funcionalidades',
-        'asdasdsadasd',
-        'asdasdsadasd',
-          ' lorem lorem lorem loremlorem',
-          ' lorem lorem lorem loremlorem',
-          'asdasdsadasd',
-        'asdasdsadasd',
-        'asdasdsadasd',
+        ' Administración de 4 pautas publicitarias en Facebook e Instagram.s',
+        ' Elaboración de Copywriting. ',
+        ' Estrategias de Contenido. ',
+        ' Manejo de 2 Redes / IG y FB',
+        ' Landing Page o creación de Tienda Virtual para venta de productos. ',
+        ' 18 Publicaciones Mensuales. ',
+        ' 12 Stories (Formato 1080px x 1920px).',
+        ' 2 Reuniones mensuales. ',
+        ' Informe detallado mensualmente.',
+        ' De Regalo: En el primer mes obtienes GRATIS tres videos profesionales para reels. ',
+        ' 3 Videos formato Reel. '
+
       ],
       position:'second',
       recomendada:true,
@@ -59,17 +71,20 @@ export function Packages() {
     let box = [];
     tecnologias.forEach(element => {
         box.push(
-            <li key={Math.random()*100} className="col">
-                
-                    element
-            </li>)
+            <li key={Math.random()*100} className="col row">
+                <div className='col-1'>
+
+              <img  style={{width:'15px'}} src="https://res.cloudinary.com/dq3fragzr/image/upload/v1683492808/GOHComputer/Public/check_mihut7.png" alt="" />  
+                </div>
+              <p className='col' >{ element}</p>          
+             </li>)
 
     })
 
     return box
 }
     return (
-        <div className='package'>
+        <div className='package' id='Price'>
           <div className="mb-5">
                 <h2 >Precios</h2>
                 <div className="underline-title mb-5"></div>

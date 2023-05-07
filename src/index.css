@@ -300,7 +300,7 @@ font-size: 13px !important;
   color: var(--secondary);
 }
 .recomendada{
-  height: 528px !important;
+ /*  height: 528px !important; */
   transform: translateY(-10%) !important;
 }
 
@@ -453,7 +453,12 @@ padding: 10px;
   right: 0; 
 }
 
-
+.subir{
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+  z-index: 1000
+}
 /* @media (min-width: 1400px){
 .container-header, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
   max-width: 1320px;

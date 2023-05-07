@@ -25,13 +25,14 @@ export function Contact() {
     const templateID="template_2beb3qo"
     let res=await emailjs.send(serviceID,templateID,formState)
      
-    if(res.status===200) return MySwal.fire({
+    if(res.status===200){
+       MySwal.fire({
       title: <h2>Se envio con éxito!</h2>,
       icon: 'success'
     })
     setFormState(data)
     setLoader(false)
-
+  }
 
     return alert("Ocurrio un error al anviar el correo");
 
