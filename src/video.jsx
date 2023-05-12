@@ -9,8 +9,9 @@ export function Video({ setOpenvideo }) {
                 <div className="videocontent">
                     <ReactPlayer
                         url={'https://www.youtube.com/watch?v=pLBuFxMYkx8'}
-                      /*     width="100%"
-                         height="100%"  */
+                        width="100%"
+                         height="700px" 
+                        
 
                         controls
                         loop
