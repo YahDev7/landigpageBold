@@ -14,9 +14,9 @@ export function Proyects() {
 
     return (
         <>
-            <div className="proyects">
+            <div className="proyects" id="Proyectos">
                 <div className="mb-5">
-                <h2 >Proyectos con rating 5</h2>
+                <h2 >Nuestros Proyectos</h2>
                 <div className="underline-title mb-5"></div>
           </div>
                 <div className="row" >

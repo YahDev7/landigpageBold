@@ -36,15 +36,19 @@ export function Header() {
                     <ul className="navbar-nav mb-2 mb-lg-0 all">
 
                       <li className="nav-item">
-                        <a className="nav-link active" href="#Banner">Home</a>
+                        <a className="nav-link active" href="#Banner">Inicio</a>
 
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#Services">Services</a>
+                        <a className="nav-link" href="#Services">Servicios</a>
 
                       </li>
                       <li className="nav-item dropdown">
-                        <a className="nav-link" href="#Price">Price</a>
+                        <a className="nav-link" href="#Proyectos">Proyectos</a>
+
+                      </li>
+                      <li className="nav-item dropdown">
+                        <a className="nav-link" href="#Price">Precio</a>
 
                       </li>
                       <li className="nav-item">
@@ -60,7 +64,7 @@ export function Header() {
 
                   <div className=" col-12 col-md-4  col-lg-3">
                     <div className=" text-center">
-                      <a className="btn btn-contacto" href="#contact"> Contactame</a>
+                      <a className="btn btn-contacto" href="#contact"> Contactanos</a>
                     </div>
                   </div>
                 </div>
