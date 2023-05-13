@@ -63,7 +63,7 @@ export function Header() {
 
 
                   <div className=" col-12 col-md-4  col-lg-3">
-                    <div className=" text-center">
+                    <div className="text-center  lg-text-end">
                       <a className="btn btn-contacto" href="#contact"> Contactanos</a>
                     </div>
                   </div>

@@ -8,12 +8,12 @@ export const Footer = () => {
           <div className="col-lg-4 col-md-6">
           <a className="" href="#/bold"><img src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682735524/BOLDSTRATEGY/Static/B_rdfdaw.png" width="30px" className="pb-3" alt="" /></a>
 
-            <p>
+          {/*   <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rutrum metus eu erat
               consectetur mollis.
-            </p>
+            </p> */}
           </div>
-          <div className="col-lg-2 col-md-6 footer-links">
+         {/*  <div className="col-lg-2 col-md-6 footer-links">
             <h4>Enlaces Útiles</h4>
             <ul>
               <li>
@@ -32,8 +32,8 @@ export const Footer = () => {
                 <i className="bi bi-chevron-right"></i> <a href="#">Politicas de Privacidad</a>
               </li>
             </ul>
-          </div>
-          <div className="col-lg-3 col-md-6 footer-contact">
+          </div> */}
+         {/*  <div className="col-lg-3 col-md-6 footer-contact">
             <h4>Contacto</h4>
             <p>
               A108 Adam Street <br />
@@ -42,8 +42,8 @@ export const Footer = () => {
               <strong>Teléfono:</strong> +1 5589 55488 55<br />
               <strong>Email:</strong> info@example.com<br />
             </p>
-          </div>
-          <div className="col-lg-3 col-md-6 footer-info">
+          </div> */}
+          {/* <div className="col-lg-3 col-md-6 footer-info">
             <h4>Síguenos</h4>
             <div className="social-links mt-3">
               <a href="#" className="twitter">
@@ -59,7 +59,7 @@ export const Footer = () => {
                 <i className="bi bi-linkedin"></i>
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     {/*   <div className="container d-md-flex py-4">

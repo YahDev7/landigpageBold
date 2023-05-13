@@ -10,10 +10,10 @@ const packages = [
           ' Elaboración de Copywriting. ',
           ' Estrategias de Contenido',
           ' Manejo de 2 Redes / IG y FB',
-          ' Página Informativa. ',
+          ' Landing Page. ',
           ' 10 Publicaciones Mensuales. ',
-          ' 1 Reunión mensual. ', 'De Regalo: En el primer mes obtienes GRATIS un video profesional para reel. ',
-          ' 1 Video formato Reel. '],
+          ' 1 Reunión mensual. ', 'De Regalo: En el primer mes obtienes GRATIS un video profesional para reel. '
+        ],
          
         position:'first'
     },
@@ -29,12 +29,11 @@ const packages = [
           ' Grilla de Contenido. ',
           '  Investigación de Mercado.',
           ' Manejo de 3 Redes / IG, FB y TIK TOK',
-          ' Landing Page o creación de Tienda Virtual para venta de productos. ',
+          ' Creación de Tienda Virtual para venta de productos. ',
           ' 30 Publicaciones Mensuales. ',
           ' 20 Stories (Formato 1080px x 1920px).',
           ' 2 Reuniones mensuales. ',
           ' Informe detallado mensualmente.',
-          ' DRegalo: En el primer mes obtienes GRATIS seis videos profesionales para reels. ',
           ' 6 Videos formato Reel. '
         ],
        
@@ -47,16 +46,15 @@ const packages = [
         name: 'Paquete Intermedio',
         price: 890 ,
         description: [
-        ' Administración de 4 pautas publicitarias en Facebook e Instagram.s',
+        ' Administración de 4 pautas publicitarias en Facebook e Instagram',
         ' Elaboración de Copywriting. ',
         ' Estrategias de Contenido. ',
         ' Manejo de 2 Redes / IG y FB',
-        ' Landing Page o creación de Tienda Virtual para venta de productos. ',
+        ' Creación de Tienda Virtual personalizada para venta de productos ',
         ' 18 Publicaciones Mensuales. ',
         ' 12 Stories (Formato 1080px x 1920px).',
         ' 2 Reuniones mensuales. ',
         ' Informe detallado mensualmente.',
-        ' De Regalo: En el primer mes obtienes GRATIS tres videos profesionales para reels. ',
         ' 3 Videos formato Reel. '
 
       ],
@@ -84,15 +82,15 @@ export function Packages() {
     return box
 }
     return (
-        <div className='package' id='Price'>
+        <div className='package pt-5' id='Price'>
           <div className="mb-5">
                 <h2 >Precios</h2>
                 <div className="underline-title mb-5"></div>
           </div>
 
-            <div>
+            {/* <div>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum corrupti eligendi deserunt voluptas incidunt adipisci error dignissimos sit in laudantium non ratione, optio architecto distinctio, qui quisquam, doloremque consectetur rem.</p>
-            </div>
+            </div> */}
             <div className="row pak">
                 {packages.map((pkg) => (
                     <div className={"col-md-4 col-sm-12 p-0"+(pkg.position === 'first' ? " order-1" : "") + (pkg.position === 'second' ? " order-2 " : "")+(pkg.position === 'three' ? " order-3" : "")} key={pkg.id}>
@@ -104,7 +102,7 @@ export function Packages() {
                             </div> */}
                             <div className="card-body">
                                 <h3 className="card-title pricing-card-title text-center">
-                                    ${pkg.price}
+                                    S/{pkg.price}
                                 </h3>
                                <p className='tiempo text-center'>PRECIO POR MES</p>
                               <div className="underline mb-5"></div>
@@ -115,9 +113,20 @@ export function Packages() {
 
                                 </ul>
                                 <div className='text-center'>
-                                  <button type="button" className=" btn btn-lg btn-comprar ">
-                                      Seleccionar
-                                  </button>
+                                 {/*  <button type="button" className=" btn btn-lg btn-comprar ">
+                                      Seleccionar */}
+                                      <a
+                                            href="https://api.whatsapp.com/send?phone=989471269"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="btn btn-comprar btn-xl col-4 pt-2 pb-2"
+                                        >
+                                            <i className="fab fa-whatsapp mr-2 me-2"></i>Solicitar 
+                                        </a>
+
+
+
+                                 {/*  </button> */}
 
                                 </div>
                             </div>

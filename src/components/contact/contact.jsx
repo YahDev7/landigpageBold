@@ -53,22 +53,22 @@ export function Contact() {
 
           <div className="col-lg-4 formdatos">
             <div className="info formdatos-content">
-              <div className="address">
+             {/*  <div className="address">
                 <i className="bi bi-geo-alt"></i>
                 <h4>Ubicación:</h4>
                 <p>Dirección, Ciudad, País</p>
-              </div>
+              </div> */}
 
               <div className="email">
                 <i className="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>email@ejemplo.com</p>
+                <p> agencia.boldstrategy@gmail.com</p>
               </div>
 
               <div className="phone">
                 <i className="bi bi-phone"></i>
                 <h4>Teléfono:</h4>
-                <p>+00 0000000000</p>
+                <p>+51 948 423 119</p>
               </div>
             </div>
           </div>

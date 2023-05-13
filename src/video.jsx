@@ -8,7 +8,7 @@ export function Video({ setOpenvideo }) {
                 <div className="btn-video" onClick={() => setOpenvideo(false)}>X</div>
                 <div className="videocontent">
                     <ReactPlayer
-                        url={'https://www.youtube.com/watch?v=pLBuFxMYkx8'}
+                        url={'https://www.youtube.com/watch?v=iBo9jbJ4KdQ'}
                         width="100%"
                          height="700px" 
                         

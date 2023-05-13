@@ -12,16 +12,10 @@ export function Banner() {
         <section className="bannersection" >
           <div className="contetnbanner position-relative"  style={{ width: "800px", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}>
             <div className=" contentacercaimg align-self-center">
-                <h2 style={{ fontSize: '50px !important' }}>Desarrollo y crecimiento de tu negocio</h2>
-                <p>¡Impulsa tu e-commerce al siguiente nivel! Con nuestros servicios de agencia digital, obtendrás:
+                <h2 style={{ fontSize: '50px !important' }}>¡Impulsa tu negocio al siguiente nivel! </h2>
+                <p>Con nuestros servicios de agencia digital obtendrás: Investigación de mercado, análisis de la competencia, diseño, implementación de campañas publicitarias, estrategias de marketing digital personalizadas, creación de contenido de marketing, diseño web atractivo y funcional, integración de sistemas de pago seguros y soporte técnico especializado. 
+¡No pierdas más ventas! Confía en nosotros para llevar tu negocio al éxito.  
 
-                Estrategias de marketing digital personalizadas
-                Diseño web atractivo y funcional
-                Mejora de la experiencia de usuario
-                Integración de sistemas de pago seguros
-                Análisis de datos para optimizar tus ventas
-                Soporte técnico especializado
-                ¡No pierdas más ventas! Confía en nosotros para llevar tu e-commerce al éxito..
                 </p>
                 <div className="content-img d-flex justify-content-center align-items-center">
                   <a onClick={()=>setOpenvideo(true)} style={{ cursor: "pointer"}}>

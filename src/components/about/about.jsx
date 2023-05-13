@@ -10,18 +10,27 @@ export function About() {
           </div>
                 <section className="our-features">
                     <div className="container">
-                        <div className="row align-items-center">
-                            <div className="col-md-5">
+                        <div className="row align-items-center" >
+                            <div className="col-md-4">
                                 <img
-                                    src="https://via.placeholder.com/400x400"
+                                    src="https://res.cloudinary.com/dq3fragzr/image/upload/v1683938800/BOLDSTRATEGY/Static/img_vhitxr.jpg"
                                     alt="Our features"
-                                    className="img-fluid"
+                                    className=""style={{width:'100%'}}
                                 />
                             </div>
                             <div className="col-md-7" style={{height:'400px'}}>
                                 {/* <h3>Our Features</h3> */}
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit nobis inventore molestias nemo dolorem, deleniti perspiciatis
-                                    quae impedit necessitatibus, itaque delectus voluptate atque maxime tempora ratione nesciunt laborum, voluptatibus facere.</p>
+                                <p>Somos una Agencia de Marketing que contamos con años de experiencia, nos encargamos de promocionar tus productos y/o servicios. 
+                                   </p>
+                                    <p> Nuestro equipo de expertos está altamente capacitado. 
+                                    Nos esforzamos en comprender las necesidades de nuestros clientes y trabajar en estrecha colaboración con ellos para desarrollar soluciones personalizadas que se adapten a sus objetivos y presupuesto. 
+                                     </p>
+
+                                     <p>Utilizamos las últimas tecnologías y técnicas de marketing para ayudar a las empresas a aumentar su presencia en línea y llegar a su público objetivo de manera efectiva. 
+                                    Si está buscando una agencia de marketing confiable y efectiva para ayudar a impulsar su negocio, ¡No dude en ponerse en contacto con nosotros! Estamos aquí para ayudarlo a alcanzar sus objetivos de marketing y aumentar su éxito comercial. 
+                               </p>
+                                
+                              {  /* 
                                 <ul>
                                     <li>
                                         <i className="bi bi-check-circle-fill"></i>Feature 1
@@ -38,7 +47,7 @@ export function About() {
                                     <li>
                                         <i className="bi bi-check-circle-fill"></i>Feature 5
                                     </li>
-                                </ul>
+                                </ul> */}
                                {/*  <a href="#" className="btn btn-primary">
                                     Learn More
                                 </a> */}

@@ -7,11 +7,11 @@ export function Services() {
       <h2>Nuestros servicios</h2>
                 <div className="underline-title mb-5"></div>
           </div>
-      <div className="pt-4">
+      {/* <div className="pt-4">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cupiditate quaerat libero, maiores nemo enim, totam necessitatibus
            doloremque voluptatum velit nostrum? Sapiente provident exercitationem nam laudantium eum harum obcaecati ullam!</p>
-      </div>
-      <div className="services__grid pt-5 ">
+      </div> */}
+      <div className="services__grid pt-2 ">
         <div className="row ">
             <div className="services__item col-lg-4 col-sm-12 col-md-6 mb-5">
               <img src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682824336/BOLDSTRATEGY/Static/promocion_mi4xvf.png" alt="Icon 1" />
@@ -25,7 +25,7 @@ export function Services() {
               <img  alt="Icon 2" src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682824336/BOLDSTRATEGY/Static/development_ylgy3x.png" />
               {/* <h3>Servicio 2</h3> */}
               <p>
-              Plataformas de aprendizaje en línea, con sistemas de gestión de cursos y herramientas interactivas para el aprendizaje en línea., incluyendo pasarela de pago
+               Web de e-commerce que ofrece un catálogo de productos, carrito de compras, pagos seguros, gestión de usuarios, gestion de inventario, gestion de movimientos, búsqueda de productos, promociones y más
 
               </p>
             </div>
