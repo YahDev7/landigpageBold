@@ -1,13 +1,51 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export function Header() {
+
+  const Scroll=()=>{
+    const d=document;
+     let positionY =window.scrollY;
+     
+     addEventListener('scroll',()=>{
+         let despazamiento_actual=window.scrollY;
+
+         if(positionY>=despazamiento_actual){
+            
+            if(despazamiento_actual<=100){ //o 80
+                d.getElementById('Header').classList.remove("fixed");
+                d.getElementById('Header').style.background="none"  
+
+             }else{
+                if(positionY>=175){
+                d.getElementById('Header').classList.add("fixed");
+                d.getElementById('Header').style.top="0px";
+                
+              }
+               
+             }
+             
+         }else{
+          
+               d.getElementById('Header').style.top="-110px"  
+               d.getElementById('Header').style.background="#1a1a1a"  
+            
+         }
+
+         positionY=despazamiento_actual;
+     })
+ } 
+ useEffect(() => {
+  Scroll();
+ 
+}, []);
   return (
     <>
 
       <header id="Header">
 
 
-      <nav className="scrolled navbar navbar-expand-lg">
+      <nav className="scrolled navbar navbar-expand-lg" data-aos="fade-down"  data-aos-easing="linear"
+    data-aos-duration="1500">
           <div className="centrar-header">
             <div className="row w-100 justify-content-between  ">
               <div className="col-sm-12 col-xl-2 row m-auto">

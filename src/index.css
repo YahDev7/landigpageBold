@@ -6,6 +6,7 @@
 *{
   font-size: 16px !important;
   font-family:"Open Sans", sans-serif;
+  /* system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" */
 }
 body{
     margin: 0;
@@ -38,15 +39,34 @@ body{
   background: var(--banner);
 } */
 
+.imgbanner{
+position: absolute;
+height: 100%;
+width: 100%;
+object-fit: cover;
+opacity: 0.3;
+}
 
 #Header{
-  color: var(--four) !important;
-  background: var(--primary); 
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 100%;
+ /*  background: var(--primary);  */
+ z-index: 7;
+  position: fixed;
+  transition: all 0.5s;
 }
 nav a{
-  color: var(--four) !important;
-
+  color: var(--secondary) !important;
+  transform: scaleY();
+  transition: all 0.5s;
 }
+
+nav a:hover{
+  color: var(--four) !important;
+/* transform:  translateY(-3%);; */
+}
+
 .nav {
   background-color: transparent !important;
 }
@@ -57,7 +77,17 @@ nav a{
   background: var(--primary);
   /* background-image: url('https://res.cloudinary.com/dq3fragzr/image/upload/v1682739719/BOLDSTRATEGY/Static/image_67_h8dk5h.png'); */
 }
+.contetnbanner{
+  width: 60% !important;
+}
+.bannersection{
+  display: grid;
+  place-items: center;
 
+}
+.services__grid p{
+  text-align: center;
+}
 .btn-buy{
   font-weight: bold;
   background-color: var(--six);
@@ -117,11 +147,11 @@ text-align: center;
  
   text-align: center;
 }
-/* .contentacercaimg{
-  width: 50%;
-  margin: 0 auto;
+.contentacercaimg h2{
+  font-size: 50px !important;
+  margin-bottom: 30px !important;
 }
- */
+
 .content-img:hover{
   transform: translateY(-3%);
   transition: 300ms;
@@ -149,13 +179,19 @@ text-align: center;
   text-align: center;
 }
 
+.services__item h3{
+  text-align: center;
+    padding-top: 30px;
+    font-size: 22px !important;
+}
 .services .services__item img{
   width: 50px;
   position: relative;
  left: 45% !important;
 }
 .services .services__item p{
-  padding-top: 30px;
+  padding-top: 15px;
+/*   color: #95a0ab !important; */
 }
 
 
@@ -208,6 +244,14 @@ font-size: 13px !important;
 /* .package p{
 
 } */
+
+.formcont-content input{
+  height: 50px !important;
+  font-size: 13px !important;
+}
+.btn-comprar{
+  color: white !important;
+}
 .package .pak{
   padding-top: 70px;
 }
@@ -223,9 +267,9 @@ font-size: 13px !important;
   font-weight: 600;
 }
 .underline {
-  opacity: 0.5  ;
-  width: 20rem;
-  height: 0.15rem;
+  opacity: 0.5 ;
+  width: 80%;
+  height: 0.1rem;
   margin-bottom: 1.25rem;
   margin-left: auto;
   margin-right: auto;
@@ -233,8 +277,9 @@ font-size: 13px !important;
 }
 
 .underline-title {
-  width: 7rem;
-  height: 0.25rem;
+  margin-top: 30px;
+  width: 4rem;
+  height: 0.1rem;
   margin-bottom: 1.25rem;
   margin-left: auto;
   margin-right: auto;
@@ -274,7 +319,7 @@ font-size: 13px !important;
 .formcont-content{
   height: 100%;
   padding: 20px;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+/*   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); */
 
   border-radius: 10px;
 }
@@ -285,7 +330,10 @@ font-size: 13px !important;
 }
 .contact h4{
   font-weight: bold;
-  font-size: 20px !important;
+  font-size:16px !important;
+}
+.contact p{
+  color: #6e6e6ecc;
 }
 .contact button{
   font-weight: bold;
@@ -369,9 +417,17 @@ footer{
   }
 }
 .btn-contacto{
+  border-radius: 2.23rem;
   background: var(--six);
   color: var(--secondary) !important;
+  transition: all 0.5s;
 }
+
+.btn-contacto:hover{
+ 
+  transform: translateY(-5px);
+}
+
 .hamburger button{
     display: flex;
     flex-direction: column;

@@ -2,7 +2,8 @@ import React from 'react';
 export function About() {
     return (
         <>
-            <div className='about' id='Nosotros'>
+            <div className='about' id='Nosotros' data-aos="fade-right"  data-aos-easing="linear"
+    data-aos-duration="1500">
                
                 <div className="mb-5">
                 <h2>Nosotros</h2>

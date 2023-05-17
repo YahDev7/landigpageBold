@@ -72,7 +72,7 @@ export function Packages() {
             <li key={Math.random()*100} className="col row">
                 <div className='col-1'>
 
-              <img  style={{width:'15px'}} src="https://res.cloudinary.com/dq3fragzr/image/upload/v1683492808/GOHComputer/Public/check_mihut7.png" alt="" />  
+              <img  style={{width:'15px'}} src="https://res.cloudinary.com/dq3fragzr/image/upload/v1684299775/BOLDSTRATEGY/Static/Group_304_ovptvp.png" alt="" />  
                 </div>
               <p className='col' >{ element}</p>          
              </li>)
@@ -91,7 +91,9 @@ export function Packages() {
             {/* <div>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum corrupti eligendi deserunt voluptas incidunt adipisci error dignissimos sit in laudantium non ratione, optio architecto distinctio, qui quisquam, doloremque consectetur rem.</p>
             </div> */}
-            <div className="row pak">
+            <div className="row pak" data-aos="zoom-in"
+             data-aos-easing="linear"
+             data-aos-duration="1000">
                 {packages.map((pkg) => (
                     <div className={"col-md-4 col-sm-12 p-0"+(pkg.position === 'first' ? " order-1" : "") + (pkg.position === 'second' ? " order-2 " : "")+(pkg.position === 'three' ? " order-3" : "")} key={pkg.id}>
                       <div className={"card mb-3 shadow-sm " + (pkg.recomendada ? "recomendada " : "") + (pkg.position === 'first' ? "first order-1" : "") + (pkg.position === 'three' ? "three order-2" : "")+(pkg.position === 'second' ? "second order-3" : "")}>
@@ -116,12 +118,12 @@ export function Packages() {
                                  {/*  <button type="button" className=" btn btn-lg btn-comprar ">
                                       Seleccionar */}
                                       <a
-                                            href="https://api.whatsapp.com/send?phone=989471269"
+                                            href={`https://api.whatsapp.com/send?phone=989471269&text=Hola,%20deseo%20el%20paquete%20${pkg.title}`}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="btn btn-comprar btn-xl col-4 pt-2 pb-2"
                                         >
-                                            <i className="fab fa-whatsapp mr-2 me-2"></i>Solicitar 
+                                            <i className="fab contacto-i fa-whatsapp mr-2 me-2"></i>Solicitar 
                                         </a>
 
 

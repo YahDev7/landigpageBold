@@ -6,11 +6,14 @@ export function Banner() {
   return (
     <>
 
-      <div id="banner">
+      <div id="banner" data-aos="zoom-out"  data-aos-easing="linear"
+    data-aos-duration="1500">
       {openvideo&& <Video setOpenvideo={setOpenvideo}></Video>}
 
+
         <section className="bannersection" >
-          <div className="contetnbanner position-relative"  style={{ width: "800px", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}>
+      <img className="imgbanner" src="https://res.cloudinary.com/dq3fragzr/image/upload/v1684330175/BOLDSTRATEGY/Static/louise-viallesoubranne-5EhN4wbfvBc-unsplash_fr8uoc.jpg"  alt="" />
+          <div className="contetnbanner position-relative"  /* style={{ width: "800px", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }} */>
             <div className=" contentacercaimg align-self-center">
                 <h2 style={{ fontSize: '50px !important' }}>¡Impulsa tu negocio al siguiente nivel! </h2>
                 <p>Con nuestros servicios de agencia digital obtendrás: Investigación de mercado, análisis de la competencia, diseño, implementación de campañas publicitarias, estrategias de marketing digital personalizadas, creación de contenido de marketing, diseño web atractivo y funcional, integración de sistemas de pago seguros y soporte técnico especializado. 
