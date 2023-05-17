@@ -1,6 +1,11 @@
 import React, { useEffect } from "react";
 
 export function Header() {
+  const BtnMenu=()=>{
+    const d=document;
+   // d.getElementById('Header').style.position="relative"
+    d.getElementById('Header').style.background="#1a1a1a" 
+   }
 
   const Scroll=()=>{
     const d=document;
@@ -56,9 +61,9 @@ export function Header() {
               </div>
 
 
-            <div className="col hamburger">
+            <div className="col-1 hamburger">
 
-                <button className="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button className="navbar-toggler p-0" onClick={(e)=>BtnMenu()} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                  {/*  <span className="navbar-toggler-icon"></span> */}
                  <div></div>
                  <div></div>

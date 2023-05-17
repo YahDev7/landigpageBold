@@ -5,10 +5,10 @@ export function Banner() {
   const [openvideo, setOpenvideo] = useState(false);
   return (
     <>
-
+{openvideo&& <Video setOpenvideo={setOpenvideo}></Video>}
       <div id="banner" data-aos="zoom-out"  data-aos-easing="linear"
     data-aos-duration="1500">
-      {openvideo&& <Video setOpenvideo={setOpenvideo}></Video>}
+      
 
 
         <section className="bannersection" >

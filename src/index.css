@@ -380,6 +380,18 @@ footer{
   color: var(--secondary);
   text-decoration: none;
 }
+@media(max-width:370px){
+  .contact {
+    padding-top: 207px !important;
+  }
+  }
+
+@media(max-width:460px){
+.contact {
+  padding-top: 90px;
+}
+}
+
 
 @media(max-width:960px){
   .bannersection h2{
