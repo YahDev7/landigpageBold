@@ -16,7 +16,7 @@ export function About() {
                                 <img
                                     src="https://res.cloudinary.com/dq3fragzr/image/upload/v1683938800/BOLDSTRATEGY/Static/img_vhitxr.jpg"
                                     alt="Our features"
-                                    className=""style={{width:'100%'}}
+                                    className=""style={{width:'100%',borderRadius:"10px"}}
                                 />
                             </div>
                             <div className="col-md-7" style={{height:'400px'}}>

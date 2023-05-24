@@ -1,75 +1,75 @@
 import React, { useEffect } from "react";
 
 export function Header() {
-  const BtnMenu=()=>{
-    const d=document;
-   // d.getElementById('Header').style.position="relative"
-    d.getElementById('Header').style.background="#1a1a1a" 
-   }
+  const BtnMenu = () => {
+    const d = document;
+    // d.getElementById('Header').style.position="relative"
+    d.getElementById('Header').style.background = "#1a1a1a"
+  }
 
-  const Scroll=()=>{
-    const d=document;
-     let positionY =window.scrollY;
-     
-     addEventListener('scroll',()=>{
-         let despazamiento_actual=window.scrollY;
+  const Scroll = () => {
+    const d = document;
+    let positionY = window.scrollY;
 
-         if(positionY>=despazamiento_actual){
-            
-            if(despazamiento_actual<=100){ //o 80
-                d.getElementById('Header').classList.remove("fixed");
-                d.getElementById('Header').style.background="none"  
+    addEventListener('scroll', () => {
+      let despazamiento_actual = window.scrollY;
 
-             }else{
-                if(positionY>=175){
-                d.getElementById('Header').classList.add("fixed");
-                d.getElementById('Header').style.top="0px";
-                
-              }
-               
-             }
-             
-         }else{
-          
-               d.getElementById('Header').style.top="-110px"  
-               d.getElementById('Header').style.background="#1a1a1a"  
-            
-         }
+      if (positionY >= despazamiento_actual) {
 
-         positionY=despazamiento_actual;
-     })
- } 
- useEffect(() => {
-  Scroll();
- 
-}, []);
+        if (despazamiento_actual <= 100) { //o 80
+          d.getElementById('Header').classList.remove("fixed");
+          d.getElementById('Header').style.background = "none"
+
+        } else {
+          if (positionY >= 175) {
+            d.getElementById('Header').classList.add("fixed");
+            d.getElementById('Header').style.top = "0px";
+
+          }
+
+        }
+
+      } else {
+
+        d.getElementById('Header').style.top = "-110px"
+        d.getElementById('Header').style.background = "#1a1a1a"
+
+      }
+
+      positionY = despazamiento_actual;
+    })
+  }
+  useEffect(() => {
+    Scroll();
+
+  }, []);
   return (
     <>
 
       <header id="Header">
 
 
-      <nav className="scrolled navbar navbar-expand-lg" data-aos="fade-down"  data-aos-easing="linear"
-    data-aos-duration="1500">
+        <nav className="scrolled navbar navbar-expand-lg" data-aos="fade-down" data-aos-easing="linear"
+          data-aos-duration="1500">
           <div className="centrar-header">
             <div className="row w-100 justify-content-between  ">
               <div className="col-sm-12 col-xl-2 row m-auto">
 
-              <div className="col-10">
+                <div className="col-10">
 
-                <a className=""  href="#/bold"><img src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682735524/BOLDSTRATEGY/Static/B_rdfdaw.png" width="30px" className="" alt="" /></a>
-              </div>
+                  <a className="" href="#/bold"><img src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682735524/BOLDSTRATEGY/Static/B_rdfdaw.png" width="30px" className="" alt="" /></a>
+                </div>
 
 
-            <div className="col-1 hamburger">
+                <div className="col-1 hamburger">
 
-                <button className="navbar-toggler p-0" onClick={(e)=>BtnMenu()} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                 {/*  <span className="navbar-toggler-icon"></span> */}
-                 <div></div>
-                 <div></div>
-                 <div></div>
-                </button>
-            </div>
+                  <button className="navbar-toggler p-0" onClick={(e) => BtnMenu()} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    {/*  <span className="navbar-toggler-icon"></span> */}
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </button>
+                </div>
 
 
               </div>
@@ -79,7 +79,7 @@ export function Header() {
                     <ul className="navbar-nav mb-2 mb-lg-0 all">
 
                       <li className="nav-item">
-                        <a className="nav-link active" href="#Banner">Inicio</a>
+                        <a className="nav-link active" href="#banner">Inicio</a>
 
                       </li>
                       <li className="nav-item">
@@ -98,7 +98,7 @@ export function Header() {
                         <a className="nav-link" href="#Nosotros">Nosotros</a>
 
                       </li>
-                   
+
 
                     </ul>
 
@@ -120,7 +120,7 @@ export function Header() {
 
 
 
-    {/*     <nav className="scrolled navbar navbar-expand-lg">
+        {/*     <nav className="scrolled navbar navbar-expand-lg">
           <div className="centrar-header">
             <div className="row justify-content-between  ">
               <div className="col-md-2 col-12 row p-0 text-center">

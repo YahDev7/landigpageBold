@@ -34,7 +34,7 @@ export function Banner() {
 
 <div className="subir">
  
-   <a className="btn btn-contacto" href="#Header"> <img style={{width:'30px'}} src="https://res.cloudinary.com/dq3fragzr/image/upload/v1683494745/GOHComputer/Public/flecha-hacia-arriba_el5h3f.png" alt="" /></a>
+   <a className="btn btn-contacto" href="#banner"> <img style={{width:'30px'}} src="https://res.cloudinary.com/dq3fragzr/image/upload/v1683494745/GOHComputer/Public/flecha-hacia-arriba_el5h3f.png" alt="" /></a>
 </div>
 
       {/*  <div id="banner" className="position-relative" >
