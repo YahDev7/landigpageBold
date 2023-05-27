@@ -40,11 +40,11 @@ export function Contact() {
 
   return (
 
-    <section id="contact" className="contact pb-5">
+    <section id="contact" className="contact pb-5 font-[Roboto]">
       {loader&& <Loader></Loader>}
 
       <div className="mb-5">
-        <h2>Contacto</h2>
+        <h2 className="font-[Roboto] font-bold !text-5xl">Contacto</h2>
         <div className="underline-title mb-5"></div>
       </div>
 
@@ -59,7 +59,7 @@ export function Contact() {
                 <p>Dirección, Ciudad, País</p>
               </div> */}
 
-              <div className="email">
+              <div className="email pb-4">
                 <i className="bi bi-envelope"></i>
                 <h4>Email:</h4>
                 <p> agencia.boldstrategy@gmail.com</p>
@@ -82,7 +82,7 @@ export function Contact() {
                     name="name"
                     value={formState.name}
                     onChange={handleInputChange}
-                    className="form-control"
+                    className=" bg-gray-100 appearance-none border-2 border-gray-100 rounded w-full py-2 px-4 text-gray-300 leading-tight focus:outline-none focus:bg-white focus:border-yellow-300"
                     id="name"
                     placeholder="Nombre completo"
                     required
@@ -95,7 +95,7 @@ export function Contact() {
                     name="email"
                     value={formState.email}
                     onChange={handleInputChange}
-                    className="form-control"
+                    className="bg-gray-100 appearance-none border-2 border-gray-100 rounded w-full py-2 px-4 text-gray-300 leading-tight focus:outline-none focus:bg-white focus:border-yellow-300"
                     id="email"
                     placeholder="Email"
                     required
@@ -109,7 +109,7 @@ export function Contact() {
                   name="subject"
                   value={formState.subject}
                   onChange={handleInputChange}
-                  className="form-control"
+                  className="bg-gray-100 appearance-none border-2 border-gray-100 rounded w-full py-2 px-4 text-gray-300 leading-tight focus:outline-none focus:bg-white focus:border-yellow-300"
                   id="subject"
                   placeholder="Asunto"
                   required
@@ -121,7 +121,7 @@ export function Contact() {
                   name="message"
                   value={formState.message}
                   onChange={handleInputChange}
-                  className="form-control"
+                  className="bg-gray-100 appearance-none border-2 border-gray-100 rounded w-full py-2 px-4 text-gray-300 leading-tight focus:outline-none focus:bg-white focus:border-yellow-300"
                   rows="5"
                   placeholder="Mensaje"
                   required

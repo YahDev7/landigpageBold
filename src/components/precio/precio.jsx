@@ -69,12 +69,12 @@ export function Packages() {
     let box = [];
     tecnologias.forEach(element => {
         box.push(
-            <li key={Math.random()*100} className="col row">
-                <div className='col-1'>
+            <li key={Math.random()*100} className="grid grid-cols-12 pb-2">
+                <div className=''>
 
-              <img  style={{width:'15px'}} src="https://res.cloudinary.com/dq3fragzr/image/upload/v1684299775/BOLDSTRATEGY/Static/Group_304_ovptvp.png" alt="" />  
+              <img className='w-4 max-w-none' src="https://res.cloudinary.com/dq3fragzr/image/upload/v1684299775/BOLDSTRATEGY/Static/Group_304_ovptvp.png" alt="" />  
                 </div>
-              <p className='col' >{ element}</p>          
+              <p className=' !text-1x1 col-start-2 col-end-12 ' >{ element}</p>          
              </li>)
 
     })
@@ -83,22 +83,26 @@ export function Packages() {
 }
     return (
         <div className='package pt-5' id='Price'>
-          <div className="mb-5">
-                <h2 >Precios</h2>
+          <div className="mb-5"
+          data-aos="zoom-in"
+          data-aos-easing="linear"
+          data-aos-duration="1000">
+                <h2 className='font-[Roboto] font-bold !text-5xl'>Precios</h2>
                 <div className="underline-title mb-5"></div>
           </div>
 
             {/* <div>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum corrupti eligendi deserunt voluptas incidunt adipisci error dignissimos sit in laudantium non ratione, optio architecto distinctio, qui quisquam, doloremque consectetur rem.</p>
             </div> */}
-            <div className="row pak" data-aos="zoom-in"
-             data-aos-easing="linear"
-             data-aos-duration="1000">
+            <div className="row pak font-[Roboto]" >
                 {packages.map((pkg) => (
-                    <div className={"col-md-4 col-sm-12 p-0"+(pkg.position === 'first' ? " order-1" : "") + (pkg.position === 'second' ? " order-2 " : "")+(pkg.position === 'three' ? " order-3" : "")} key={pkg.id}>
+                    <div className={"col-md-4 col-sm-12 p-0"+(pkg.position === 'first' ? " order-1" : "") + (pkg.position === 'second' ? " order-2 " : "")+(pkg.position === 'three' ? " order-3" : "")} key={pkg.id}
+                    data-aos="zoom-in"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000">
                       <div className={"card mb-3 shadow-sm " + (pkg.recomendada ? "recomendada " : "") + (pkg.position === 'first' ? "first order-1" : "") + (pkg.position === 'three' ? "three order-2" : "")+(pkg.position === 'second' ? "second order-3" : "")}>
                         {/* <div className={ pkg.recomendada?"card mb-3 shadow-sm recomendada" :"" && pkg.position==='first'?"first card mb-3 shadow-sm":''&& pkg.position==='three'?"three card mb-3 shadow-sm":''   } > */}
-                        <h3 className='gama pt-4' style={{textAlign:'center'}}>{pkg.title}</h3>
+                        <h3 className='gama pt-4 "' style={{textAlign:'center'}}>{pkg.title}</h3>
                            {/*  <div className="card-header">
                                 <h4 className="my-0 font-weight-normal">{pkg.name}</h4>
                             </div> */}
@@ -109,7 +113,7 @@ export function Packages() {
                                <p className='tiempo text-center'>PRECIO POR MES</p>
                               <div className="underline mb-5"></div>
 
-                                <ul className="list-unstyled features mt-3 mb-4">
+                                <ul className="list-unstyled ">
                                     {features(pkg.description)}
                                     {/* <li>{pkg.description}</li> */}
 

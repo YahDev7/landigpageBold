@@ -14,13 +14,13 @@ function App() {
   return (
     <div>
       <Header/>
-      <Banner></Banner>
-      <Services></Services>
+       <Banner></Banner>
+   <Services></Services>
       {/*  <Proyects/>  */}
-       <Packages></Packages>
-       <About></About>
-       <Contact></Contact>
-       <Footer></Footer>
+        <Packages></Packages>
+      <About></About>
+     <Contact></Contact>
+         <Footer></Footer> 
     </div>
   )
 }

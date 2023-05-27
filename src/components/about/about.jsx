@@ -6,7 +6,7 @@ export function About() {
     data-aos-duration="1500">
                
                 <div className="mb-5">
-                <h2>Nosotros</h2>
+                <h2 className='font-[Roboto] font-bold !text-5xl'>Nosotros</h2>
                 <div className="underline-title mb-5"></div>
           </div>
                 <section className="our-features">
@@ -19,7 +19,7 @@ export function About() {
                                     className=""style={{width:'100%',borderRadius:"10px"}}
                                 />
                             </div>
-                            <div className="col-md-7" style={{height:'400px'}}>
+                            <div className="col-md-7 font-[Roboto]" style={{height:'400px'}}>
                                 {/* <h3>Our Features</h3> */}
                                 <p>Somos una Agencia de Marketing que contamos con años de experiencia, nos encargamos de promocionar tus productos y/o servicios. 
                                    </p>

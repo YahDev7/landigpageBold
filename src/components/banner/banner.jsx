@@ -12,15 +12,16 @@ export function Banner() {
 
 
         <section className="bannersection" >
-      <img className="imgbanner" src="https://res.cloudinary.com/dq3fragzr/image/upload/v1684330175/BOLDSTRATEGY/Static/louise-viallesoubranne-5EhN4wbfvBc-unsplash_fr8uoc.jpg"  alt="" />
+          <video className="imgbanner" src="https://res.cloudinary.com/dq3fragzr/video/upload/v1685030358/crecimiento_u9ne5c.mp4" autoPlay loop muted></video>
+      {/* <img className="imgbanner" src="https://res.cloudinary.com/dq3fragzr/image/upload/v1684330175/BOLDSTRATEGY/Static/louise-viallesoubranne-5EhN4wbfvBc-unsplash_fr8uoc.jpg"  alt="" /> */}
           <div className="contetnbanner position-relative"  /* style={{ width: "800px", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }} */>
             <div className=" contentacercaimg align-self-center">
-                <h2 style={{ fontSize: '50px !important' }}>¡Impulsa tu negocio al siguiente nivel! </h2>
-                <p>Con nuestros servicios de agencia digital obtendrás: Investigación de mercado, análisis de la competencia, diseño, implementación de campañas publicitarias, estrategias de marketing digital personalizadas, creación de contenido de marketing, diseño web atractivo y funcional, integración de sistemas de pago seguros y soporte técnico especializado. 
+                <h2 style={{ fontSize: '50px !important' }} className="font-[Roboto] font-bold text-white">¡Impulsa tu negocio al siguiente nivel! </h2>
+                <p className="font-[roboto] font-light text-white">Con nuestros servicios de agencia digital obtendrás: Investigación de mercado, análisis de la competencia, diseño, implementación de campañas publicitarias, estrategias de marketing digital personalizadas, creación de contenido de marketing, diseño web atractivo y funcional, integración de sistemas de pago seguros y soporte técnico especializado. 
 ¡No pierdas más ventas! Confía en nosotros para llevar tu negocio al éxito.  
 
                 </p>
-                <div className="content-img d-flex justify-content-center align-items-center">
+                <div className=" pt-5 content-img d-flex justify-content-center align-items-center">
                   <a onClick={()=>setOpenvideo(true)} style={{ cursor: "pointer"}}>
                     <img src="https://res.cloudinary.com/dq3fragzr/image/upload/v1682739028/BOLDSTRATEGY/Static/Group_168_xdt2xi.png" />
                   </a>

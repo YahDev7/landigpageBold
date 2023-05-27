@@ -3,9 +3,23 @@
 @import "./css/carrito.css";
 @import "./css/subcategorias.css";
 @import "./css/categorias.css"; */
+
+
+/* 
+font-family: 'Kanit', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Russo One', sans-serif; */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 *{
   font-size: 16px !important;
-  font-family:"Open Sans", sans-serif;
+/* font-family: 'Roboto', sans-serif;
+ */
   /* system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" */
 }
 body{
@@ -47,32 +61,30 @@ object-fit: cover;
 opacity: 0.3;
 }
 
-#Header{
+/* #Header{
   padding-top: 14px;
   padding-bottom: 14px;
   width: 100%;
- /*  background: var(--primary);  */
  z-index: 7;
   position: fixed;
   transition: all 0.5s;
-}
-nav a{
+} */
+/* nav a{
   color: var(--secondary) !important;
   transform: scaleY();
   transition: all 0.5s;
-}
+} */
 
-nav a:hover{
+/* nav a:hover{
   color: var(--four) !important;
-/* transform:  translateY(-3%);; */
-}
+} */
 
-.nav {
+/* .nav {
   background-color: transparent !important;
-}
+} */
 #banner{
-  height:600px;
- max-height: 600px;
+  height:700px;
+ max-height: 700px;
  width: 100%;
   background: var(--primary);
   /* background-image: url('https://res.cloudinary.com/dq3fragzr/image/upload/v1682739719/BOLDSTRATEGY/Static/image_67_h8dk5h.png'); */
@@ -140,10 +152,8 @@ text-align: center;
 .content-banner h2,.bannersection h2 {
   font-size: 40px !important;
   text-align: center;
-  color: var(--three); 
 }
 .content-banner p,.bannersection p{
-  color: var(--three);
  
   text-align: center;
 }
@@ -175,7 +185,7 @@ text-align: center;
 }
 
 .services h2, .package h2 ,.about h2{
-  font-size: 30px !important;
+ /*  font-size: 30px !important; */
   text-align: center;
 }
 
@@ -325,7 +335,7 @@ font-size: 13px !important;
 }
 .contact h2{
   padding-top: 50px;
-  font-size: 30px !important;
+  /* font-size: 30px !important; */
   text-align: center;
 }
 .contact h4{
